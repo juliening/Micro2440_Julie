@@ -10,10 +10,10 @@ int main(int argc, char **argv)
 {
     int fd;
     int val = 1;
-    fd = open("/dev/ledh", O_RDWR);
+    fd = open("/dev/platfor_driver_for_mini2440_led", O_RDWR);
     if (fd < 0)
     {
-        printf("can't open ledh!\n");
+        printf("can't open platfor_driver_for_mini2440_led!\n");
     }
     if (argc != 2)
     {
